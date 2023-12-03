@@ -1,7 +1,7 @@
 import { app } from "./app.js"
 import { settingDotenvPort } from "./config/dotenv.js"
 
-const {port} = settingDotenvPort() 
+const {port} = settingDotenvPort() || 4000
 
 
 

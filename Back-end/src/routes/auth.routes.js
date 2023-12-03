@@ -1,6 +1,7 @@
 // Endpoints del servidor
 import { Router } from "express";
-import { login, register } from "../controllers/auth.cntrl.js";
+import { login, profile, register } from "../controllers/auth.cntrl.js";
+import { authRequired } from "../middlewares/validate.token.js";
 
 export const routes = Router();
 
@@ -9,3 +10,6 @@ routes.post("/register", register)
 
 // Rutas para el login
 routes.post("/login", login)
+
+// Ruta para el perfil
+routes.get("/profile",authRequired,profile);

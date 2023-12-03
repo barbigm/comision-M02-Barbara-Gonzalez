@@ -10,4 +10,8 @@ export const settingDotenvDB = () => {
     return {db: {
         localhost: process.env.DB_LOCALHOST
     }}
+};
+
+export const settingDotenvSecret = () => {
+    return { secret: process.env.SECRET_KEY}
 }
