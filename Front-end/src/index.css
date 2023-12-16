@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(148, 193, 154);
+  color: black;
+  text-align: justify ;
+  
+  /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_wPsVsDj53wMzB6pzecawcxQu_1DAz0rCAQ&usqp=CAU);*/
+  
+}
+
+
